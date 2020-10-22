@@ -1,0 +1,63 @@
+<html>
+ <body class="carbon"> 
+    <script src="javascript.js"></script>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <link href="style.css" rel="stylesheet">
+    <h1>MyPortofolio</h1>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="portofolio.html">Home</a></li>
+                <li><a href="aboutme.html">Who Am I?</a></li>
+                <li><a href="projects.html">MyProjects</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+</style>
+<body>
+
+<h2 class="w3-center">“Walking on water and developing software from a specification are easy if both are frozen.”
+    ― Edward V. Berard</h2>
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="public\img\welcome2.jpg" style="width:100%">
+  <img class="mySlides" src="public\img\portofolio.jpg" style="width:100%">
+  <img class="mySlides" src="public\img\html.jpg" style="width:100%">
+  <img class="mySlides" src="public\img\best1.jpg" style="width:100%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slides = 1;
+showDivs(slides);
+
+function plusDivs(n) {
+  showDivs(slides += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slides = 1}
+  if (n < 1) {slides = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slides-1].style.display = "block";  
+}
+</script>
+</body>
+</body>
+</html>
